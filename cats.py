@@ -1,0 +1,34 @@
+#Given the below class:
+class Cat:
+    species = 'mammal'
+    def __init__(self, nameofthecat, ageofthecat):
+
+        self.nameofthecat = nameofthecat
+
+        self.ageofthecat = ageofthecat
+
+
+# 1 Instantiate the Cat 
+# object with 3 cats
+catname1 = Cat('Peter', 3)
+
+catname2 = Cat('Julie', 2)
+
+catname3 = Cat('Pierre', 1)
+
+
+
+
+
+# 2 Create a function that 
+# finds the oldest cat
+def get_oldest_cat (*args):
+
+    return max(args)
+
+
+
+
+# 3 Print out: "The oldest cat is x years old.". x 
+# will be the oldest cat age by using the function in #2
+print(f"The oldest cat age is {get_oldest_cat(catname1.ageofthecat, catname2.ageofthecat, catname3.ageofthecat)} years old.")
